@@ -6,7 +6,7 @@ const forEach = require('lodash/forEach');
 const docx = require('docx');
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
-const humanize = require("underscore.string/humanize");
+const humanize = require('underscore.string/humanize');
 
 // contents : string[] or string
 const createParagraph = (contents, opt = {}) => {
@@ -53,17 +53,15 @@ const formatDuration = s => {
   const mstart = moment(start.trim(), 'DD MMM YYYY');
   const mend = end && moment(end.trim(), 'DD MMM YYYY');
 
-  return `${mstart.format('MMM YYYY')} ~ ${mend ? mend.format('MMM YYYY') : 'to date'} ${
-    `(${(mend || moment()).diff(mstart, 'months') + 1} months${mend ? '' : ' ~'})`
-  }`;
+  return `${mstart.format('MMM YYYY')} ~ ${mend ? mend.format('MMM YYYY') : 'to date'} ${`(${(mend || moment()).diff(
+    mstart,
+    'months',
+  ) + 1} months${mend ? '' : ' ~'})`}`;
 };
 
 const outputWork = (doc, data, opt = {}) => {
   const { digest = false } = opt;
-  const p = createParagraph([
-    data.company,
-    ` -- ${data.location}`,
-  ], { br: false, boldFirst: true });
+  const p = createParagraph([data.company, ` -- ${data.location}`], { br: false, boldFirst: true });
   appendParagraph(p, `    ${data.title}; ${data.field}`);
   appendParagraph(p, '    ' + formatDuration(data.duration), { boldFirst: !digest });
   if (!digest) {
@@ -78,10 +76,7 @@ const outputWork = (doc, data, opt = {}) => {
 };
 
 const outputEducation = (doc, data) => {
-  const p = createParagraph([
-    data.title,
-    ` -- ${data.acquisition}`,
-  ], { br: false, boldFirst: true });
+  const p = createParagraph([data.title, ` -- ${data.acquisition}`], { br: false, boldFirst: true });
   appendParagraph(p, `    ${data.major}`);
   appendParagraph(p, `    ${data.institute} -- ${data.location}`);
   if (data.achievements) {
@@ -96,18 +91,10 @@ const outputLanguage = (doc, data) => {
 };
 
 const outputProfile = (doc, data) => {
-  const p1 = createParagraph([
-    data.title,
-    data.email,
-    data.address,
-  ]).right();
+  const p1 = createParagraph([data.title, data.email, data.address]).right();
   doc.addParagraph(p1);
 
-  const p = createParagraph([
-    '',
-    `    ${data.carrierSummary.default}`,
-    '',
-  ]);
+  const p = createParagraph(['', `    ${data.carrierSummary.default}`, '']);
 
   if (data.technicalSkills) {
     forEach(data.technicalSkills, (v, k) => {
