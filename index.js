@@ -61,15 +61,16 @@ const formatDuration = s => {
 
 const outputWork = (doc, data, opt = {}) => {
   const { digest = false } = opt;
-  const p = createParagraph([data.company, ` -- ${data.location}`], { br: false, boldFirst: true });
-  appendParagraph(p, `    ${data.title}; ${data.field}`);
+  const p = createParagraph([data.company, ` -- ${data.location}`, `; ${data.field}`], { br: false, boldFirst: true });
   appendParagraph(p, '    ' + formatDuration(data.duration), { boldFirst: !digest });
+  appendParagraph(p, `; ${data.title}`, { br: false });
   if (!digest) {
     if (data.achievements) {
       data.achievements.forEach(a => appendParagraph(p, '    - ' + a));
     }
     if (data.skills) {
-      appendParagraph(p, '    * ' + data.skills.join(', '));
+      appendParagraph(p, '    * Acquired/developed skills:  ');
+      appendParagraph(p, data.skills.join(', '), { br: false });
     }
   }
   doc.addParagraph(p);
@@ -107,12 +108,13 @@ const outputProfile = (doc, data) => {
 
 // main OUTPUT
 (async () => {
-  const s = yaml.load(await readFile('resume2018.yml'));
+  const s = yaml.load(await readFile('./resume2018.yml'));
+  const styles = await readFile('./styles.xml', 'utf-8');
   const { author, title, description } = s.header;
-  const doc = new docx.Document({ author, title, description }, { top: 100, right: 1200 });
+  const doc = new docx.Document({ author, title, description, externalStyles: styles }, { top: 100, right: 1200 });
 
   const footer = doc.Footer.createParagraph().right();
-  const pageNumber = new docx.TextRun(`${author} ${moment().format('DDMMMYYYY')} : `).pageNumber();
+  const pageNumber = new docx.TextRun(`${author} -- ${moment().format('DD MMM YYYY')} -- `).pageNumber();
   footer.addRun(pageNumber);
 
   s.header.paragraphs.forEach((p, pIdx) => {
