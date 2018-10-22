@@ -3,6 +3,7 @@ const moment = require('moment');
 const fs = require('fs');
 const { promisify } = require('util');
 const forEach = require('lodash/forEach');
+const get = require('lodash/get');
 const docx = require('docx');
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
@@ -65,12 +66,14 @@ const outputWork = (doc, data, opt = {}) => {
   appendParagraph(p, '    ' + formatDuration(data.duration), { boldFirst: !digest });
   appendParagraph(p, `; ${data.title}`, { br: false });
   if (!digest) {
-    if (data.achievements) {
-      data.achievements.forEach(a => appendParagraph(p, '    - ' + a));
+    const achievements = data.get('achievements');
+    if (achievements) {
+      achievements.forEach(a => appendParagraph(p, '    - ' + a));
     }
-    if (data.skills) {
+    const skills = data.get('skills');
+    if (skills) {
       appendParagraph(p, '    * Acquired/developed skills:  ');
-      appendParagraph(p, data.skills.join(', '), { br: false });
+      appendParagraph(p, skills.join(', '), { br: false });
     }
   }
   doc.addParagraph(p);
@@ -91,16 +94,42 @@ const outputLanguage = (doc, data) => {
   doc.addParagraph(p);
 };
 
+class Parser {
+  constructor(data, context = '') {
+    this._context = context;
+    Object.assign(this, data);
+  }
+
+  getByContext(target) {
+    if (target.default) {
+      if (this._context) {
+        return target[this._context] || target.default;
+      }
+      return target.default;
+    }
+    return target;
+  }
+
+  get(path) {
+    const target = get(this, path, {});
+    if (Array.isArray(target)) {
+      return target;
+    }
+    return this.getByContext(target);
+  };
+}
+
 const outputProfile = (doc, data) => {
   const p1 = createParagraph([data.title, data.email, data.address]).right();
   doc.addParagraph(p1);
 
-  const p = createParagraph(['', `    ${data.carrierSummary.default}`, '']);
+  const p = createParagraph(['', `    ${data.get('carrierSummary')}`, '']);
+  const technicalSkills = data.get('technicalSkills');
 
-  if (data.technicalSkills) {
-    forEach(data.technicalSkills, (v, k) => {
+  if (technicalSkills) {
+    forEach(technicalSkills, (v, k) => {
       appendParagraph(p, `    * ${humanize(k)}`);
-      appendParagraph(p, `      ${v.join(', ')}`);
+      appendParagraph(p, `      ${data.getByContext(v).join(', ')}`);
     });
   }
   doc.addParagraph(p);
@@ -110,7 +139,7 @@ const outputProfile = (doc, data) => {
 (async () => {
   const s = yaml.load(await readFile('./resume2018.yml'));
   const styles = await readFile('./styles.xml', 'utf-8');
-  const { author, title, description } = s.header;
+  const { author, title, description, focusOn = '' } = s.header;
   const doc = new docx.Document({ author, title, description, externalStyles: styles }, { top: 100, right: 1200 });
 
   const footer = doc.Footer.createParagraph().right();
@@ -130,23 +159,28 @@ const outputProfile = (doc, data) => {
 
     if (Array.isArray(data)) {
       // return;
+      let hidden = 0;
       data.forEach((d, idx) => {
-        if (!p.first || idx < p.first) {
+        if (!p.first || idx < (p.first + hidden)) {
           if (d.company) {
-            outputWork(doc, d);
-            insertBlankParagraph(doc);
+            if (!(d.hideOn || []).includes(focusOn)) {
+              outputWork(doc, new Parser(d, focusOn));
+              insertBlankParagraph(doc);
+            } else {
+              hidden++;
+            }
           } else if (d.institute) {
-            outputEducation(doc, d);
+            outputEducation(doc, new Parser(d, focusOn));
             insertBlankParagraph(doc);
           } else {
             outputLanguage(doc, d);
           }
-        } else if (p.digestRest && idx >= p.first) {
-          outputWork(doc, d, { digest: true });
+        } else if (p.digestRest && idx >= (p.first + hidden)) {
+          outputWork(doc, new Parser(d, focusOn), { digest: true });
         }
       });
     } else {
-      outputProfile(doc, data);
+      outputProfile(doc, new Parser(data, focusOn));
     }
     insertBlankParagraph(doc);
   });
