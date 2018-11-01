@@ -9,6 +9,8 @@ const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 const humanize = require('underscore.string/humanize');
 
+const [,,inputFile] = process.argv;
+
 // contents : string[] or string
 const createParagraph = (contents, opt = {}) => {
   const paragraph = new docx.Paragraph();
@@ -137,7 +139,7 @@ const outputProfile = (doc, data) => {
 
 // main OUTPUT
 (async () => {
-  const s = yaml.load(await readFile('./resume2018.yml'));
+  const s = yaml.load(await readFile(inputFile || './resume2018.yml'));
   const styles = await readFile('./styles.xml', 'utf-8');
   const { author, title, description, focusOn = '' } = s.header;
   const doc = new docx.Document({ author, title, description, externalStyles: styles }, { top: 100, right: 1200 });
