@@ -9,6 +9,7 @@
 # production
 /build
 /_build
+/lib
 
 # misc
 .DS_Store
@@ -25,3 +26,6 @@ yarn-error.log*
 
 resume*.yml
 output*.*
+
+*.docx
+*.pdf
