@@ -12,8 +12,10 @@ Generate docx resume from yaml data
 
 ## Usage
 
+
 ```
-$ node index.js sample.yml
+$ npm i
+$ npm run output -- sample.yml
 ```
 
 ## Yaml source format
@@ -42,8 +44,9 @@ please refer to [sample.yml](sample.yml)
 
 ## Todos
 
-- [ ] add test script
-- [ ] convert to npm library
+- [x] add test script
+- [x] convert to npm library
+- [ ] publish npm v0.9
 - [ ] add template to change styles
 
 ## Note
