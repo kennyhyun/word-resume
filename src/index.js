@@ -1,15 +1,10 @@
 const yaml = require('js-yaml');
 const moment = require('moment');
-const fs = require('fs');
 const { promisify } = require('util');
 const forEach = require('lodash/forEach');
 const get = require('lodash/get');
 const docx = require('docx');
-const readFile = promisify(fs.readFile);
-const writeFile = promisify(fs.writeFile);
 const humanize = require('underscore.string/humanize');
-
-const [,,inputFile] = process.argv;
 
 // contents : string[] or string
 const createParagraph = (contents, opt = {}) => {
@@ -138,9 +133,8 @@ const outputProfile = (doc, data) => {
 };
 
 // main OUTPUT
-(async () => {
-  const s = yaml.load(await readFile(inputFile || './resume2018.yml'));
-  const styles = await readFile('./styles.xml', 'utf-8');
+const generateDocument = (source, styles) => {
+  const s = source;
   const { author, title, description, focusOn = '' } = s.header;
   const doc = new docx.Document({ author, title, description, externalStyles: styles }, { top: 100, right: 1200 });
 
@@ -188,8 +182,25 @@ const outputProfile = (doc, data) => {
   });
 
   // doc.document.body.root.forEach(p => console.log(p));
+  return doc;
+};
 
-  const packer = new docx.Packer();
-  const buffer = await packer.toBuffer(doc);
-  await writeFile(`${author}-${moment().format('DDMMMYYYY')}.docx`, buffer);
-})();
+// cli
+if (process.argv[1] === __filename) {
+  (async () => {
+    const [,,inputFile] = process.argv;
+    const fs = require('fs');
+    const readFile = promisify(fs.readFile);
+    const writeFile = promisify(fs.writeFile);
+
+    const styles = await readFile('./styles.xml', 'utf-8');
+    const s = yaml.load(await readFile(inputFile || './resume2018.yml'));
+    const doc = generateDocument(s, styles);
+    const packer = new docx.Packer();
+    const buffer = await packer.toBuffer(doc);
+    const { author } = s.header;
+    await writeFile(`${author}-${moment().format('DDMMMYYYY')}.docx`, buffer);
+  })();
+}
+
+module.exports = generateDocument;
