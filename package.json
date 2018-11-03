@@ -1,8 +1,12 @@
 {
-  "name": "resume",
-  "version": "0.9.0",
+  "name": "write-yaml-resume",
+  "version": "0.9.2",
   "description": "",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennyhyun/word-resume.git"
+  },
   "scripts": {
     "build": "babel src --out-dir lib",
     "prepublish": "npm test && npm run build",

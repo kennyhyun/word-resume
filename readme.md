@@ -46,7 +46,7 @@ please refer to [sample.yml](sample.yml)
 
 - [x] add test script
 - [x] convert to npm library
-- [ ] publish npm v0.9
+- [x] publish npm v0.9.2
 - [ ] add template to change styles
 
 ## Note
