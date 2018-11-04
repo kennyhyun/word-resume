@@ -133,13 +133,13 @@ const outputProfile = (doc, data) => {
 };
 
 // main OUTPUT
-const generateDocument = (source, styles) => {
+const generateDocument = (source, styles, now = new Date()) => {
   const s = source;
   const { author, title, description, focusOn = '' } = s.header;
   const doc = new docx.Document({ author, title, description, externalStyles: styles }, { top: 100, right: 1200 });
 
   const footer = doc.Footer.createParagraph().right();
-  const pageNumber = new docx.TextRun(`${author} -- ${moment().format('DD MMM YYYY')} -- `).pageNumber();
+  const pageNumber = new docx.TextRun(`${author} -- ${moment(now).format('DD MMM YYYY')} -- `).pageNumber();
   footer.addRun(pageNumber);
 
   s.header.paragraphs.forEach((p, pIdx) => {
