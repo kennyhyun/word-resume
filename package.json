@@ -1,6 +1,6 @@
 {
-  "name": "write-yaml-resume",
-  "version": "0.9.2",
+  "name": "render-resume",
+  "version": "0.9.3",
   "description": "",
   "main": "lib/index.js",
   "repository": {
@@ -12,6 +12,10 @@
     "prepublish": "npm test && npm run build",
     "output": "node lib/index.js",
     "test": "jest"
+  },
+  "bin": {
+    "render-resume": "bin/render.js",
+    "generate-resume-source": "bin/generateSeed.js"
   },
   "author": "",
   "license": "ISC",

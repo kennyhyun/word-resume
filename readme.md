@@ -1,6 +1,6 @@
 # Word resume generator
 
-Generate docx resume from yaml data
+Generate docx resume from yaml data using [docx](https://github.com/dolanmiu/docx)
 
 * Avoid hassles like updating dates and focus on the contents.
 * Generate Uptodate resume instantly
@@ -12,10 +12,42 @@ Generate docx resume from yaml data
 
 ## Usage
 
+### git clone
 
+After cloning this repo,
 ```
 $ npm i
 $ npm run output -- sample.yml
+```
+
+### npm (recommended)
+
+```
+$ npm install render-resume -g
+$ generate-resume-source resume.yml
+$ render-resume resume.yml
+```
+
+### Programmatic
+
+npm install
+
+```
+$ npm i render-resume -S
+```
+
+in js
+
+```
+import docx from 'docx';
+import fs from 'fs';
+import render from 'render-resume';
+import seeder from 'render-resume/lib/seeder';
+
+const doc = render(seeder('some-random-seed'));
+const packer = new docx.Packer();
+const buffer = await packer.toBuffer(doc);
+fs.writeFile('filename.docx', buffer);
 ```
 
 ## Yaml source format
