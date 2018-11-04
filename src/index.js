@@ -1,6 +1,4 @@
-const yaml = require('js-yaml');
 const moment = require('moment');
-const { promisify } = require('util');
 const forEach = require('lodash/forEach');
 const get = require('lodash/get');
 const docx = require('docx');
@@ -188,8 +186,11 @@ const generateDocument = (source, styles, now = new Date()) => {
 // cli
 if (process.argv[1] === __filename) {
   (async () => {
-    const [,,inputFile] = process.argv;
     const fs = require('fs');
+    const { promisify } = require('util');
+    const yaml = require('js-yaml');
+
+    const [,,inputFile] = process.argv;
     const readFile = promisify(fs.readFile);
     const writeFile = promisify(fs.writeFile);
 
