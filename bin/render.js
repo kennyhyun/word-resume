@@ -13,7 +13,7 @@ const generateDocument = require('../lib');
   const readFile = promisify(fs.readFile);
   const writeFile = promisify(fs.writeFile);
 
-  const styles = await readFile('./styles.xml', 'utf-8');
+  const styles = await readFile(__dirname+'/../styles.xml', 'utf-8');
   const s = yaml.load(await readFile(inputFile || './resume2018.yml'));
   const doc = generateDocument(s, styles);
   const packer = new docx.Packer();
