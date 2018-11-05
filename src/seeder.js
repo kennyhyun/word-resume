@@ -112,7 +112,7 @@ const data = (c, timelines) => {
   };
 };
 
-const generateSeed = (seed = 'resume-generator-seed-1', now = new Date()) => {
+const generateSeed = (seed = 'resume-generator-seed-1', now = new Date(), filename) => {
   const c = new Chance(seed);
   const year = now.getYear() + 1900;
   const times = Array(20)
@@ -120,19 +120,22 @@ const generateSeed = (seed = 'resume-generator-seed-1', now = new Date()) => {
     .map(_ => c.year({ min: year-30, max: year }))
     .map(year => c.date({year}))
     .sort((a,b) => b-a);
-  return data(c, times);
+  const jsonData = data(c, times);
+  if (typeof filename === 'string') {
+    const fs = require('fs');
+    const { promisify } = require('util');
+    const yaml = require('js-yaml');
+    const writeFile = promisify(fs.writeFile);
+    writeFile(filename, yaml.dump(jsonData))
+      .catch(e => console.error(e));
+  }
+  return jsonData;
 }
 
 // console.log(yaml.dump(data));
 if (process.argv[2] === __filename) {
   (async () => {
-    const fs = require('fs');
-    const { promisify } = require('util');
-    const yaml = require('js-yaml');
-
-    const writeFile = promisify(fs.writeFile);
-    const d = generateSeed();
-    await writeFile('sample.yml', yaml.dump(d));
+    generateSeed('resume=generator-seed-1', new Date(), 'sample.yml');
   })();
 }
 
