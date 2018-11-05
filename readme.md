@@ -1,5 +1,7 @@
 # Word resume generator
 
+[npm package render-resume](https://www.npmjs.com/package/render-resume)
+
 Generate docx resume from yaml data using [docx](https://github.com/dolanmiu/docx)
 
 * Avoid hassles like updating dates and focus on the contents.
@@ -86,3 +88,6 @@ please refer to [sample.yml](sample.yml)
 - Confirmed working with node version 8
 - Use nvm if you want to test without upgrading your system node
 
+## Screen shot
+
+![sample](https://user-images.githubusercontent.com/5399854/47976379-42b4d200-e106-11e8-800c-4f41ddebb14b.png)
