@@ -205,3 +205,5 @@ if (process.argv[1] === __filename) {
 }
 
 module.exports = generateDocument;
+const seeder = require('./seeder');
+module.exports.seeder = seeder;

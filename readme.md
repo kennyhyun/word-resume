@@ -14,20 +14,32 @@ Generate docx resume from yaml data using [docx](https://github.com/dolanmiu/doc
 
 ## Usage
 
+### npm (recommended)
+
+in a blank directory
+
+```
+$ git init
+$ npm init --yes
+$ npm install -S render-resume
+$ npx generate-resume-source resume.yml
+$ git add . && git commit -m "init"
+```
+
+edit the yaml file for your resume and render
+
+```
+$ npx render-resume resume.yml
+```
+
+repeat editing and render until you want and you can commit and keep your own yaml in the local repo
+
 ### git clone
 
 After cloning this repo,
 ```
 $ npm i
 $ npm run output -- sample.yml
-```
-
-### npm (recommended)
-
-```
-$ npm install render-resume -g
-$ generate-resume-source resume.yml
-$ render-resume resume.yml
 ```
 
 ### Programmatic
@@ -43,8 +55,7 @@ in js
 ```
 import docx from 'docx';
 import fs from 'fs';
-import render from 'render-resume';
-import seeder from 'render-resume/lib/seeder';
+import render, { seeder } from 'render-resume';
 
 const doc = render(seeder('some-random-seed'));
 const packer = new docx.Packer();
@@ -81,12 +92,8 @@ please refer to [sample.yml](sample.yml)
 - [x] add test script
 - [x] convert to npm library
 - [x] publish npm v0.9.2
+- [ ] add using custom style.xml
 - [ ] add template to change styles
-
-## Note
-
-- Confirmed working with node version 8
-- Use nvm if you want to test without upgrading your system node
 
 ## Screen shot
 
