@@ -1,5 +1,5 @@
-const generateSeed = require('./seeder');
 const generateDocument = require('./');
+const generateSeed = require('./seeder');
 
 it('should match snapshot', () => {
   const now = new Date('2018-11-01');
