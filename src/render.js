@@ -1,6 +1,7 @@
 const moment = require('moment');
 const forEach = require('lodash/forEach');
 const get = require('lodash/get');
+const isEmpty = require('lodash/isEmpty');
 const docx = require('docx');
 const humanize = require('underscore.string/humanize');
 
@@ -66,7 +67,7 @@ const outputWork = (doc, data, opt = {}) => {
       achievements.forEach(a => appendParagraph(p, '    - ' + a));
     }
     const skills = data.get('skills');
-    if (skills) {
+    if (skills && !isEmpty(skills)) {
       appendParagraph(p, '    * Acquired/developed skills:  ');
       appendParagraph(p, skills.join(', '), { br: false });
     }
