@@ -39,7 +39,7 @@ repeat editing and render until you want and you can commit and keep your own ya
 After cloning this repo,
 ```
 $ npm i
-$ npm run output -- sample.yml
+$ npm run render sample.yml
 ```
 
 ### Programmatic
