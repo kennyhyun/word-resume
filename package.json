@@ -10,7 +10,7 @@
   "scripts": {
     "build": "babel src --out-dir lib",
     "prepublish": "npm test && npm run build",
-    "output": "node lib/index.js",
+    "render": "node bin/render.js",
     "test": "jest"
   },
   "bin": {
