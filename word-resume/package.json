@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kennyhyun/word-resume.git"
+    "url": "git+https://github.com/kennyhyun/word-resume.git/word-resume"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
