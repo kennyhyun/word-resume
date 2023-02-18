@@ -20,19 +20,24 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "chance": "^1.0.16",
-    "docx": "^4.3.0",
-    "js-yaml": "^3.12.0",
-    "lodash": "^4.17.11",
-    "moment": "^2.22.2",
-    "underscore.string": "^3.3.5"
+    "chance": "^1.1.10",
+    "docx": "^4.7.1",
+    "js-yaml": "^3.14.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "underscore.string": "^3.3.6"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "jest": "^23.6.0"
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.4.3",
+    "jest": "^25.5.4"
+  },
+  "jest": {
+    "transform": {
+      "\\.[jt]sx?$": "babel-jest"
+    },
+    "verbose": true
   }
 }

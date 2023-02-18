@@ -1,6 +1,0 @@
-{
-  "presets": [["@babel/preset-env", {
-     useBuiltIns: "usage"
-  }]],
-  "ignore": ["**/*.test.js"]
-}

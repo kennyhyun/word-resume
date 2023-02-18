@@ -570,30 +570,346 @@ File {
       "defaultSection": SectionProperties {
         "deleted": false,
         "options": Object {
-          "bottom": 1440,
-          "footer": 708,
-          "footerId": 5,
-          "footerType": "default",
-          "gutter": 0,
-          "header": 708,
-          "headerId": 4,
-          "headerType": "default",
-          "height": 16838,
-          "left": 1440,
-          "linePitch": 360,
-          "mirror": false,
-          "orientation": "portrait",
-          "pageBorderBottom": undefined,
-          "pageBorderLeft": undefined,
-          "pageBorderRight": undefined,
-          "pageBorderTop": undefined,
-          "pageBorders": undefined,
-          "pageNumberFormatType": "decimal",
-          "pageNumberStart": undefined,
+          "footers": Object {
+            "default": FooterWrapper {
+              "footer": Footer {
+                "deleted": false,
+                "refId": 5,
+                "root": Array [
+                  FooterAttributes {
+                    "deleted": false,
+                    "root": Object {
+                      "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                      "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                      "o": "urn:schemas-microsoft-com:office:office",
+                      "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                      "v": "urn:schemas-microsoft-com:vml",
+                      "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                      "w10": "urn:schemas-microsoft-com:office:word",
+                      "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                      "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                      "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                      "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                      "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                      "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                      "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                      "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                      "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+                    },
+                    "rootKey": "_attr",
+                    "xmlKeys": Object {
+                      "cp": "xmlns:cp",
+                      "dc": "xmlns:dc",
+                      "dcmitype": "xmlns:dcmitype",
+                      "dcterms": "xmlns:dcterms",
+                      "m": "xmlns:m",
+                      "mc": "xmlns:mc",
+                      "o": "xmlns:o",
+                      "r": "xmlns:r",
+                      "type": "xsi:type",
+                      "v": "xmlns:v",
+                      "w": "xmlns:w",
+                      "w10": "xmlns:w10",
+                      "w14": "xmlns:w14",
+                      "w15": "xmlns:w15",
+                      "wne": "xmlns:wne",
+                      "wp": "xmlns:wp",
+                      "wp14": "xmlns:wp14",
+                      "wpc": "xmlns:wpc",
+                      "wpg": "xmlns:wpg",
+                      "wpi": "xmlns:wpi",
+                      "wps": "xmlns:wps",
+                      "xsi": "xmlns:xsi",
+                    },
+                  },
+                  Paragraph {
+                    "deleted": false,
+                    "properties": ParagraphProperties {
+                      "deleted": false,
+                      "paragraphBorder": Border {
+                        "deleted": false,
+                        "root": Array [],
+                        "rootKey": "w:pBdr",
+                      },
+                      "root": Array [
+                        Alignment {
+                          "deleted": false,
+                          "root": Array [
+                            AlignmentAttributes {
+                              "deleted": false,
+                              "root": Object {
+                                "val": "right",
+                              },
+                              "rootKey": "_attr",
+                              "xmlKeys": Object {
+                                "val": "w:val",
+                              },
+                            },
+                          ],
+                          "rootKey": "w:jc",
+                        },
+                      ],
+                      "rootKey": "w:pPr",
+                    },
+                    "root": Array [
+                      ParagraphProperties {
+                        "deleted": false,
+                        "paragraphBorder": Border {
+                          "deleted": false,
+                          "root": Array [],
+                          "rootKey": "w:pBdr",
+                        },
+                        "root": Array [
+                          Alignment {
+                            "deleted": false,
+                            "root": Array [
+                              AlignmentAttributes {
+                                "deleted": false,
+                                "root": Object {
+                                  "val": "right",
+                                },
+                                "rootKey": "_attr",
+                                "xmlKeys": Object {
+                                  "val": "w:val",
+                                },
+                              },
+                            ],
+                            "rootKey": "w:jc",
+                          },
+                        ],
+                        "rootKey": "w:pPr",
+                      },
+                      TextRun {
+                        "deleted": false,
+                        "properties": RunProperties {
+                          "deleted": false,
+                          "root": Array [],
+                          "rootKey": "w:rPr",
+                        },
+                        "root": Array [
+                          RunProperties {
+                            "deleted": false,
+                            "root": Array [],
+                            "rootKey": "w:rPr",
+                          },
+                          Text {
+                            "deleted": false,
+                            "root": Array [
+                              TextAttributes {
+                                "deleted": false,
+                                "root": Object {
+                                  "space": "preserve",
+                                },
+                                "rootKey": "_attr",
+                                "xmlKeys": Object {
+                                  "space": "xml:space",
+                                },
+                              },
+                              "Flora Chapman -- 01 Nov 2018 -- ",
+                            ],
+                            "rootKey": "w:t",
+                          },
+                          Begin {
+                            "deleted": false,
+                            "root": Array [
+                              FidCharAttrs {
+                                "deleted": false,
+                                "root": Object {
+                                  "dirty": undefined,
+                                  "type": "begin",
+                                },
+                                "rootKey": "_attr",
+                                "xmlKeys": Object {
+                                  "dirty": "w:dirty",
+                                  "type": "w:fldCharType",
+                                },
+                              },
+                            ],
+                            "rootKey": "w:fldChar",
+                          },
+                          Page {
+                            "deleted": false,
+                            "root": Array [
+                              TextAttributes {
+                                "deleted": false,
+                                "root": Object {
+                                  "space": "preserve",
+                                },
+                                "rootKey": "_attr",
+                                "xmlKeys": Object {
+                                  "space": "xml:space",
+                                },
+                              },
+                              "PAGE",
+                            ],
+                            "rootKey": "w:instrText",
+                          },
+                          Separate {
+                            "deleted": false,
+                            "root": Array [
+                              FidCharAttrs {
+                                "deleted": false,
+                                "root": Object {
+                                  "dirty": undefined,
+                                  "type": "separate",
+                                },
+                                "rootKey": "_attr",
+                                "xmlKeys": Object {
+                                  "dirty": "w:dirty",
+                                  "type": "w:fldCharType",
+                                },
+                              },
+                            ],
+                            "rootKey": "w:fldChar",
+                          },
+                          End {
+                            "deleted": false,
+                            "root": Array [
+                              FidCharAttrs {
+                                "deleted": false,
+                                "root": Object {
+                                  "dirty": undefined,
+                                  "type": "end",
+                                },
+                                "rootKey": "_attr",
+                                "xmlKeys": Object {
+                                  "dirty": "w:dirty",
+                                  "type": "w:fldCharType",
+                                },
+                              },
+                            ],
+                            "rootKey": "w:fldChar",
+                          },
+                        ],
+                        "rootKey": "w:r",
+                      },
+                    ],
+                    "rootKey": "w:p",
+                  },
+                ],
+                "rootKey": "w:ftr",
+              },
+              "media": Media {
+                "map": Map {},
+              },
+              "relationships": Relationships {
+                "deleted": false,
+                "root": Array [
+                  RelationshipsAttributes {
+                    "deleted": false,
+                    "root": Object {
+                      "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+                    },
+                    "rootKey": "_attr",
+                    "xmlKeys": Object {
+                      "xmlns": "xmlns",
+                    },
+                  },
+                ],
+                "rootKey": "Relationships",
+              },
+            },
+          },
+          "headers": Object {
+            "default": HeaderWrapper {
+              "header": Header {
+                "deleted": false,
+                "refId": 4,
+                "root": Array [
+                  HeaderAttributes {
+                    "deleted": false,
+                    "root": Object {
+                      "cx": "http://schemas.microsoft.com/office/drawing/2014/chartex",
+                      "cx1": "http://schemas.microsoft.com/office/drawing/2015/9/8/chartex",
+                      "cx2": "http://schemas.microsoft.com/office/drawing/2015/10/21/chartex",
+                      "cx3": "http://schemas.microsoft.com/office/drawing/2016/5/9/chartex",
+                      "cx4": "http://schemas.microsoft.com/office/drawing/2016/5/10/chartex",
+                      "cx5": "http://schemas.microsoft.com/office/drawing/2016/5/11/chartex",
+                      "cx6": "http://schemas.microsoft.com/office/drawing/2016/5/12/chartex",
+                      "cx7": "http://schemas.microsoft.com/office/drawing/2016/5/13/chartex",
+                      "cx8": "http://schemas.microsoft.com/office/drawing/2016/5/14/chartex",
+                      "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                      "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                      "o": "urn:schemas-microsoft-com:office:office",
+                      "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                      "v": "urn:schemas-microsoft-com:vml",
+                      "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                      "w10": "urn:schemas-microsoft-com:office:word",
+                      "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                      "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                      "w16cid": "http://schemas.microsoft.com/office/word/2016/wordml/cid",
+                      "w16se": "http://schemas.microsoft.com/office/word/2015/wordml/symex",
+                      "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                      "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                      "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                      "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                      "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                      "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                      "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+                    },
+                    "rootKey": "_attr",
+                    "xmlKeys": Object {
+                      "cp": "xmlns:cp",
+                      "cx": "xmlns:cx",
+                      "cx1": "xmlns:cx1",
+                      "cx2": "xmlns:cx2",
+                      "cx3": "xmlns:cx3",
+                      "cx4": "xmlns:cx4",
+                      "cx5": "xmlns:cx5",
+                      "cx6": "xmlns:cx6",
+                      "cx7": "xmlns:cx7",
+                      "cx8": "xmlns:cx8",
+                      "dc": "xmlns:dc",
+                      "dcmitype": "xmlns:dcmitype",
+                      "dcterms": "xmlns:dcterms",
+                      "m": "xmlns:m",
+                      "mc": "xmlns:mc",
+                      "o": "xmlns:o",
+                      "r": "xmlns:r",
+                      "type": "xsi:type",
+                      "v": "xmlns:v",
+                      "w": "xmlns:w",
+                      "w10": "xmlns:w10",
+                      "w14": "xmlns:w14",
+                      "w15": "xmlns:w15",
+                      "w16cid": "xmlns:w16cid",
+                      "w16se": "xmlns:w16se",
+                      "wne": "xmlns:wne",
+                      "wp": "xmlns:wp",
+                      "wp14": "xmlns:wp14",
+                      "wpc": "xmlns:wpc",
+                      "wpg": "xmlns:wpg",
+                      "wpi": "xmlns:wpi",
+                      "wps": "xmlns:wps",
+                      "xsi": "xmlns:xsi",
+                    },
+                  },
+                ],
+                "rootKey": "w:hdr",
+              },
+              "media": Media {
+                "map": Map {},
+              },
+              "relationships": Relationships {
+                "deleted": false,
+                "root": Array [
+                  RelationshipsAttributes {
+                    "deleted": false,
+                    "root": Object {
+                      "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+                    },
+                    "rootKey": "_attr",
+                    "xmlKeys": Object {
+                      "xmlns": "xmlns",
+                    },
+                  },
+                ],
+                "rootKey": "Relationships",
+              },
+            },
+          },
           "right": 1200,
-          "space": 708,
           "top": 100,
-          "width": 11906,
         },
         "root": Array [
           PageSize {
@@ -6431,30 +6747,346 @@ File {
         SectionProperties {
           "deleted": false,
           "options": Object {
-            "bottom": 1440,
-            "footer": 708,
-            "footerId": 5,
-            "footerType": "default",
-            "gutter": 0,
-            "header": 708,
-            "headerId": 4,
-            "headerType": "default",
-            "height": 16838,
-            "left": 1440,
-            "linePitch": 360,
-            "mirror": false,
-            "orientation": "portrait",
-            "pageBorderBottom": undefined,
-            "pageBorderLeft": undefined,
-            "pageBorderRight": undefined,
-            "pageBorderTop": undefined,
-            "pageBorders": undefined,
-            "pageNumberFormatType": "decimal",
-            "pageNumberStart": undefined,
+            "footers": Object {
+              "default": FooterWrapper {
+                "footer": Footer {
+                  "deleted": false,
+                  "refId": 5,
+                  "root": Array [
+                    FooterAttributes {
+                      "deleted": false,
+                      "root": Object {
+                        "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                        "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                        "o": "urn:schemas-microsoft-com:office:office",
+                        "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                        "v": "urn:schemas-microsoft-com:vml",
+                        "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                        "w10": "urn:schemas-microsoft-com:office:word",
+                        "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                        "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                        "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                        "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                        "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                        "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                        "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                        "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                        "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+                      },
+                      "rootKey": "_attr",
+                      "xmlKeys": Object {
+                        "cp": "xmlns:cp",
+                        "dc": "xmlns:dc",
+                        "dcmitype": "xmlns:dcmitype",
+                        "dcterms": "xmlns:dcterms",
+                        "m": "xmlns:m",
+                        "mc": "xmlns:mc",
+                        "o": "xmlns:o",
+                        "r": "xmlns:r",
+                        "type": "xsi:type",
+                        "v": "xmlns:v",
+                        "w": "xmlns:w",
+                        "w10": "xmlns:w10",
+                        "w14": "xmlns:w14",
+                        "w15": "xmlns:w15",
+                        "wne": "xmlns:wne",
+                        "wp": "xmlns:wp",
+                        "wp14": "xmlns:wp14",
+                        "wpc": "xmlns:wpc",
+                        "wpg": "xmlns:wpg",
+                        "wpi": "xmlns:wpi",
+                        "wps": "xmlns:wps",
+                        "xsi": "xmlns:xsi",
+                      },
+                    },
+                    Paragraph {
+                      "deleted": false,
+                      "properties": ParagraphProperties {
+                        "deleted": false,
+                        "paragraphBorder": Border {
+                          "deleted": false,
+                          "root": Array [],
+                          "rootKey": "w:pBdr",
+                        },
+                        "root": Array [
+                          Alignment {
+                            "deleted": false,
+                            "root": Array [
+                              AlignmentAttributes {
+                                "deleted": false,
+                                "root": Object {
+                                  "val": "right",
+                                },
+                                "rootKey": "_attr",
+                                "xmlKeys": Object {
+                                  "val": "w:val",
+                                },
+                              },
+                            ],
+                            "rootKey": "w:jc",
+                          },
+                        ],
+                        "rootKey": "w:pPr",
+                      },
+                      "root": Array [
+                        ParagraphProperties {
+                          "deleted": false,
+                          "paragraphBorder": Border {
+                            "deleted": false,
+                            "root": Array [],
+                            "rootKey": "w:pBdr",
+                          },
+                          "root": Array [
+                            Alignment {
+                              "deleted": false,
+                              "root": Array [
+                                AlignmentAttributes {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "val": "right",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "val": "w:val",
+                                  },
+                                },
+                              ],
+                              "rootKey": "w:jc",
+                            },
+                          ],
+                          "rootKey": "w:pPr",
+                        },
+                        TextRun {
+                          "deleted": false,
+                          "properties": RunProperties {
+                            "deleted": false,
+                            "root": Array [],
+                            "rootKey": "w:rPr",
+                          },
+                          "root": Array [
+                            RunProperties {
+                              "deleted": false,
+                              "root": Array [],
+                              "rootKey": "w:rPr",
+                            },
+                            Text {
+                              "deleted": false,
+                              "root": Array [
+                                TextAttributes {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "space": "preserve",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "space": "xml:space",
+                                  },
+                                },
+                                "Flora Chapman -- 01 Nov 2018 -- ",
+                              ],
+                              "rootKey": "w:t",
+                            },
+                            Begin {
+                              "deleted": false,
+                              "root": Array [
+                                FidCharAttrs {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "dirty": undefined,
+                                    "type": "begin",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "dirty": "w:dirty",
+                                    "type": "w:fldCharType",
+                                  },
+                                },
+                              ],
+                              "rootKey": "w:fldChar",
+                            },
+                            Page {
+                              "deleted": false,
+                              "root": Array [
+                                TextAttributes {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "space": "preserve",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "space": "xml:space",
+                                  },
+                                },
+                                "PAGE",
+                              ],
+                              "rootKey": "w:instrText",
+                            },
+                            Separate {
+                              "deleted": false,
+                              "root": Array [
+                                FidCharAttrs {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "dirty": undefined,
+                                    "type": "separate",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "dirty": "w:dirty",
+                                    "type": "w:fldCharType",
+                                  },
+                                },
+                              ],
+                              "rootKey": "w:fldChar",
+                            },
+                            End {
+                              "deleted": false,
+                              "root": Array [
+                                FidCharAttrs {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "dirty": undefined,
+                                    "type": "end",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "dirty": "w:dirty",
+                                    "type": "w:fldCharType",
+                                  },
+                                },
+                              ],
+                              "rootKey": "w:fldChar",
+                            },
+                          ],
+                          "rootKey": "w:r",
+                        },
+                      ],
+                      "rootKey": "w:p",
+                    },
+                  ],
+                  "rootKey": "w:ftr",
+                },
+                "media": Media {
+                  "map": Map {},
+                },
+                "relationships": Relationships {
+                  "deleted": false,
+                  "root": Array [
+                    RelationshipsAttributes {
+                      "deleted": false,
+                      "root": Object {
+                        "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+                      },
+                      "rootKey": "_attr",
+                      "xmlKeys": Object {
+                        "xmlns": "xmlns",
+                      },
+                    },
+                  ],
+                  "rootKey": "Relationships",
+                },
+              },
+            },
+            "headers": Object {
+              "default": HeaderWrapper {
+                "header": Header {
+                  "deleted": false,
+                  "refId": 4,
+                  "root": Array [
+                    HeaderAttributes {
+                      "deleted": false,
+                      "root": Object {
+                        "cx": "http://schemas.microsoft.com/office/drawing/2014/chartex",
+                        "cx1": "http://schemas.microsoft.com/office/drawing/2015/9/8/chartex",
+                        "cx2": "http://schemas.microsoft.com/office/drawing/2015/10/21/chartex",
+                        "cx3": "http://schemas.microsoft.com/office/drawing/2016/5/9/chartex",
+                        "cx4": "http://schemas.microsoft.com/office/drawing/2016/5/10/chartex",
+                        "cx5": "http://schemas.microsoft.com/office/drawing/2016/5/11/chartex",
+                        "cx6": "http://schemas.microsoft.com/office/drawing/2016/5/12/chartex",
+                        "cx7": "http://schemas.microsoft.com/office/drawing/2016/5/13/chartex",
+                        "cx8": "http://schemas.microsoft.com/office/drawing/2016/5/14/chartex",
+                        "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                        "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                        "o": "urn:schemas-microsoft-com:office:office",
+                        "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                        "v": "urn:schemas-microsoft-com:vml",
+                        "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                        "w10": "urn:schemas-microsoft-com:office:word",
+                        "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                        "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                        "w16cid": "http://schemas.microsoft.com/office/word/2016/wordml/cid",
+                        "w16se": "http://schemas.microsoft.com/office/word/2015/wordml/symex",
+                        "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                        "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                        "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                        "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                        "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                        "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                        "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+                      },
+                      "rootKey": "_attr",
+                      "xmlKeys": Object {
+                        "cp": "xmlns:cp",
+                        "cx": "xmlns:cx",
+                        "cx1": "xmlns:cx1",
+                        "cx2": "xmlns:cx2",
+                        "cx3": "xmlns:cx3",
+                        "cx4": "xmlns:cx4",
+                        "cx5": "xmlns:cx5",
+                        "cx6": "xmlns:cx6",
+                        "cx7": "xmlns:cx7",
+                        "cx8": "xmlns:cx8",
+                        "dc": "xmlns:dc",
+                        "dcmitype": "xmlns:dcmitype",
+                        "dcterms": "xmlns:dcterms",
+                        "m": "xmlns:m",
+                        "mc": "xmlns:mc",
+                        "o": "xmlns:o",
+                        "r": "xmlns:r",
+                        "type": "xsi:type",
+                        "v": "xmlns:v",
+                        "w": "xmlns:w",
+                        "w10": "xmlns:w10",
+                        "w14": "xmlns:w14",
+                        "w15": "xmlns:w15",
+                        "w16cid": "xmlns:w16cid",
+                        "w16se": "xmlns:w16se",
+                        "wne": "xmlns:wne",
+                        "wp": "xmlns:wp",
+                        "wp14": "xmlns:wp14",
+                        "wpc": "xmlns:wpc",
+                        "wpg": "xmlns:wpg",
+                        "wpi": "xmlns:wpi",
+                        "wps": "xmlns:wps",
+                        "xsi": "xmlns:xsi",
+                      },
+                    },
+                  ],
+                  "rootKey": "w:hdr",
+                },
+                "media": Media {
+                  "map": Map {},
+                },
+                "relationships": Relationships {
+                  "deleted": false,
+                  "root": Array [
+                    RelationshipsAttributes {
+                      "deleted": false,
+                      "root": Object {
+                        "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+                      },
+                      "rootKey": "_attr",
+                      "xmlKeys": Object {
+                        "xmlns": "xmlns",
+                      },
+                    },
+                  ],
+                  "rootKey": "Relationships",
+                },
+              },
+            },
             "right": 1200,
-            "space": 708,
             "top": 100,
-            "width": 11906,
           },
           "root": Array [
             PageSize {
@@ -6652,30 +7284,346 @@ File {
         "defaultSection": SectionProperties {
           "deleted": false,
           "options": Object {
-            "bottom": 1440,
-            "footer": 708,
-            "footerId": 5,
-            "footerType": "default",
-            "gutter": 0,
-            "header": 708,
-            "headerId": 4,
-            "headerType": "default",
-            "height": 16838,
-            "left": 1440,
-            "linePitch": 360,
-            "mirror": false,
-            "orientation": "portrait",
-            "pageBorderBottom": undefined,
-            "pageBorderLeft": undefined,
-            "pageBorderRight": undefined,
-            "pageBorderTop": undefined,
-            "pageBorders": undefined,
-            "pageNumberFormatType": "decimal",
-            "pageNumberStart": undefined,
+            "footers": Object {
+              "default": FooterWrapper {
+                "footer": Footer {
+                  "deleted": false,
+                  "refId": 5,
+                  "root": Array [
+                    FooterAttributes {
+                      "deleted": false,
+                      "root": Object {
+                        "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                        "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                        "o": "urn:schemas-microsoft-com:office:office",
+                        "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                        "v": "urn:schemas-microsoft-com:vml",
+                        "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                        "w10": "urn:schemas-microsoft-com:office:word",
+                        "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                        "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                        "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                        "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                        "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                        "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                        "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                        "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                        "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+                      },
+                      "rootKey": "_attr",
+                      "xmlKeys": Object {
+                        "cp": "xmlns:cp",
+                        "dc": "xmlns:dc",
+                        "dcmitype": "xmlns:dcmitype",
+                        "dcterms": "xmlns:dcterms",
+                        "m": "xmlns:m",
+                        "mc": "xmlns:mc",
+                        "o": "xmlns:o",
+                        "r": "xmlns:r",
+                        "type": "xsi:type",
+                        "v": "xmlns:v",
+                        "w": "xmlns:w",
+                        "w10": "xmlns:w10",
+                        "w14": "xmlns:w14",
+                        "w15": "xmlns:w15",
+                        "wne": "xmlns:wne",
+                        "wp": "xmlns:wp",
+                        "wp14": "xmlns:wp14",
+                        "wpc": "xmlns:wpc",
+                        "wpg": "xmlns:wpg",
+                        "wpi": "xmlns:wpi",
+                        "wps": "xmlns:wps",
+                        "xsi": "xmlns:xsi",
+                      },
+                    },
+                    Paragraph {
+                      "deleted": false,
+                      "properties": ParagraphProperties {
+                        "deleted": false,
+                        "paragraphBorder": Border {
+                          "deleted": false,
+                          "root": Array [],
+                          "rootKey": "w:pBdr",
+                        },
+                        "root": Array [
+                          Alignment {
+                            "deleted": false,
+                            "root": Array [
+                              AlignmentAttributes {
+                                "deleted": false,
+                                "root": Object {
+                                  "val": "right",
+                                },
+                                "rootKey": "_attr",
+                                "xmlKeys": Object {
+                                  "val": "w:val",
+                                },
+                              },
+                            ],
+                            "rootKey": "w:jc",
+                          },
+                        ],
+                        "rootKey": "w:pPr",
+                      },
+                      "root": Array [
+                        ParagraphProperties {
+                          "deleted": false,
+                          "paragraphBorder": Border {
+                            "deleted": false,
+                            "root": Array [],
+                            "rootKey": "w:pBdr",
+                          },
+                          "root": Array [
+                            Alignment {
+                              "deleted": false,
+                              "root": Array [
+                                AlignmentAttributes {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "val": "right",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "val": "w:val",
+                                  },
+                                },
+                              ],
+                              "rootKey": "w:jc",
+                            },
+                          ],
+                          "rootKey": "w:pPr",
+                        },
+                        TextRun {
+                          "deleted": false,
+                          "properties": RunProperties {
+                            "deleted": false,
+                            "root": Array [],
+                            "rootKey": "w:rPr",
+                          },
+                          "root": Array [
+                            RunProperties {
+                              "deleted": false,
+                              "root": Array [],
+                              "rootKey": "w:rPr",
+                            },
+                            Text {
+                              "deleted": false,
+                              "root": Array [
+                                TextAttributes {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "space": "preserve",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "space": "xml:space",
+                                  },
+                                },
+                                "Flora Chapman -- 01 Nov 2018 -- ",
+                              ],
+                              "rootKey": "w:t",
+                            },
+                            Begin {
+                              "deleted": false,
+                              "root": Array [
+                                FidCharAttrs {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "dirty": undefined,
+                                    "type": "begin",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "dirty": "w:dirty",
+                                    "type": "w:fldCharType",
+                                  },
+                                },
+                              ],
+                              "rootKey": "w:fldChar",
+                            },
+                            Page {
+                              "deleted": false,
+                              "root": Array [
+                                TextAttributes {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "space": "preserve",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "space": "xml:space",
+                                  },
+                                },
+                                "PAGE",
+                              ],
+                              "rootKey": "w:instrText",
+                            },
+                            Separate {
+                              "deleted": false,
+                              "root": Array [
+                                FidCharAttrs {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "dirty": undefined,
+                                    "type": "separate",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "dirty": "w:dirty",
+                                    "type": "w:fldCharType",
+                                  },
+                                },
+                              ],
+                              "rootKey": "w:fldChar",
+                            },
+                            End {
+                              "deleted": false,
+                              "root": Array [
+                                FidCharAttrs {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "dirty": undefined,
+                                    "type": "end",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "dirty": "w:dirty",
+                                    "type": "w:fldCharType",
+                                  },
+                                },
+                              ],
+                              "rootKey": "w:fldChar",
+                            },
+                          ],
+                          "rootKey": "w:r",
+                        },
+                      ],
+                      "rootKey": "w:p",
+                    },
+                  ],
+                  "rootKey": "w:ftr",
+                },
+                "media": Media {
+                  "map": Map {},
+                },
+                "relationships": Relationships {
+                  "deleted": false,
+                  "root": Array [
+                    RelationshipsAttributes {
+                      "deleted": false,
+                      "root": Object {
+                        "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+                      },
+                      "rootKey": "_attr",
+                      "xmlKeys": Object {
+                        "xmlns": "xmlns",
+                      },
+                    },
+                  ],
+                  "rootKey": "Relationships",
+                },
+              },
+            },
+            "headers": Object {
+              "default": HeaderWrapper {
+                "header": Header {
+                  "deleted": false,
+                  "refId": 4,
+                  "root": Array [
+                    HeaderAttributes {
+                      "deleted": false,
+                      "root": Object {
+                        "cx": "http://schemas.microsoft.com/office/drawing/2014/chartex",
+                        "cx1": "http://schemas.microsoft.com/office/drawing/2015/9/8/chartex",
+                        "cx2": "http://schemas.microsoft.com/office/drawing/2015/10/21/chartex",
+                        "cx3": "http://schemas.microsoft.com/office/drawing/2016/5/9/chartex",
+                        "cx4": "http://schemas.microsoft.com/office/drawing/2016/5/10/chartex",
+                        "cx5": "http://schemas.microsoft.com/office/drawing/2016/5/11/chartex",
+                        "cx6": "http://schemas.microsoft.com/office/drawing/2016/5/12/chartex",
+                        "cx7": "http://schemas.microsoft.com/office/drawing/2016/5/13/chartex",
+                        "cx8": "http://schemas.microsoft.com/office/drawing/2016/5/14/chartex",
+                        "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                        "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                        "o": "urn:schemas-microsoft-com:office:office",
+                        "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                        "v": "urn:schemas-microsoft-com:vml",
+                        "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                        "w10": "urn:schemas-microsoft-com:office:word",
+                        "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                        "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                        "w16cid": "http://schemas.microsoft.com/office/word/2016/wordml/cid",
+                        "w16se": "http://schemas.microsoft.com/office/word/2015/wordml/symex",
+                        "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                        "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                        "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                        "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                        "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                        "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                        "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+                      },
+                      "rootKey": "_attr",
+                      "xmlKeys": Object {
+                        "cp": "xmlns:cp",
+                        "cx": "xmlns:cx",
+                        "cx1": "xmlns:cx1",
+                        "cx2": "xmlns:cx2",
+                        "cx3": "xmlns:cx3",
+                        "cx4": "xmlns:cx4",
+                        "cx5": "xmlns:cx5",
+                        "cx6": "xmlns:cx6",
+                        "cx7": "xmlns:cx7",
+                        "cx8": "xmlns:cx8",
+                        "dc": "xmlns:dc",
+                        "dcmitype": "xmlns:dcmitype",
+                        "dcterms": "xmlns:dcterms",
+                        "m": "xmlns:m",
+                        "mc": "xmlns:mc",
+                        "o": "xmlns:o",
+                        "r": "xmlns:r",
+                        "type": "xsi:type",
+                        "v": "xmlns:v",
+                        "w": "xmlns:w",
+                        "w10": "xmlns:w10",
+                        "w14": "xmlns:w14",
+                        "w15": "xmlns:w15",
+                        "w16cid": "xmlns:w16cid",
+                        "w16se": "xmlns:w16se",
+                        "wne": "xmlns:wne",
+                        "wp": "xmlns:wp",
+                        "wp14": "xmlns:wp14",
+                        "wpc": "xmlns:wpc",
+                        "wpg": "xmlns:wpg",
+                        "wpi": "xmlns:wpi",
+                        "wps": "xmlns:wps",
+                        "xsi": "xmlns:xsi",
+                      },
+                    },
+                  ],
+                  "rootKey": "w:hdr",
+                },
+                "media": Media {
+                  "map": Map {},
+                },
+                "relationships": Relationships {
+                  "deleted": false,
+                  "root": Array [
+                    RelationshipsAttributes {
+                      "deleted": false,
+                      "root": Object {
+                        "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+                      },
+                      "rootKey": "_attr",
+                      "xmlKeys": Object {
+                        "xmlns": "xmlns",
+                      },
+                    },
+                  ],
+                  "rootKey": "Relationships",
+                },
+              },
+            },
             "right": 1200,
-            "space": 708,
             "top": 100,
-            "width": 11906,
           },
           "root": Array [
             PageSize {
@@ -12513,30 +13461,346 @@ File {
           SectionProperties {
             "deleted": false,
             "options": Object {
-              "bottom": 1440,
-              "footer": 708,
-              "footerId": 5,
-              "footerType": "default",
-              "gutter": 0,
-              "header": 708,
-              "headerId": 4,
-              "headerType": "default",
-              "height": 16838,
-              "left": 1440,
-              "linePitch": 360,
-              "mirror": false,
-              "orientation": "portrait",
-              "pageBorderBottom": undefined,
-              "pageBorderLeft": undefined,
-              "pageBorderRight": undefined,
-              "pageBorderTop": undefined,
-              "pageBorders": undefined,
-              "pageNumberFormatType": "decimal",
-              "pageNumberStart": undefined,
+              "footers": Object {
+                "default": FooterWrapper {
+                  "footer": Footer {
+                    "deleted": false,
+                    "refId": 5,
+                    "root": Array [
+                      FooterAttributes {
+                        "deleted": false,
+                        "root": Object {
+                          "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                          "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                          "o": "urn:schemas-microsoft-com:office:office",
+                          "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                          "v": "urn:schemas-microsoft-com:vml",
+                          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                          "w10": "urn:schemas-microsoft-com:office:word",
+                          "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                          "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                          "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                          "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                          "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                          "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                          "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                          "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                          "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+                        },
+                        "rootKey": "_attr",
+                        "xmlKeys": Object {
+                          "cp": "xmlns:cp",
+                          "dc": "xmlns:dc",
+                          "dcmitype": "xmlns:dcmitype",
+                          "dcterms": "xmlns:dcterms",
+                          "m": "xmlns:m",
+                          "mc": "xmlns:mc",
+                          "o": "xmlns:o",
+                          "r": "xmlns:r",
+                          "type": "xsi:type",
+                          "v": "xmlns:v",
+                          "w": "xmlns:w",
+                          "w10": "xmlns:w10",
+                          "w14": "xmlns:w14",
+                          "w15": "xmlns:w15",
+                          "wne": "xmlns:wne",
+                          "wp": "xmlns:wp",
+                          "wp14": "xmlns:wp14",
+                          "wpc": "xmlns:wpc",
+                          "wpg": "xmlns:wpg",
+                          "wpi": "xmlns:wpi",
+                          "wps": "xmlns:wps",
+                          "xsi": "xmlns:xsi",
+                        },
+                      },
+                      Paragraph {
+                        "deleted": false,
+                        "properties": ParagraphProperties {
+                          "deleted": false,
+                          "paragraphBorder": Border {
+                            "deleted": false,
+                            "root": Array [],
+                            "rootKey": "w:pBdr",
+                          },
+                          "root": Array [
+                            Alignment {
+                              "deleted": false,
+                              "root": Array [
+                                AlignmentAttributes {
+                                  "deleted": false,
+                                  "root": Object {
+                                    "val": "right",
+                                  },
+                                  "rootKey": "_attr",
+                                  "xmlKeys": Object {
+                                    "val": "w:val",
+                                  },
+                                },
+                              ],
+                              "rootKey": "w:jc",
+                            },
+                          ],
+                          "rootKey": "w:pPr",
+                        },
+                        "root": Array [
+                          ParagraphProperties {
+                            "deleted": false,
+                            "paragraphBorder": Border {
+                              "deleted": false,
+                              "root": Array [],
+                              "rootKey": "w:pBdr",
+                            },
+                            "root": Array [
+                              Alignment {
+                                "deleted": false,
+                                "root": Array [
+                                  AlignmentAttributes {
+                                    "deleted": false,
+                                    "root": Object {
+                                      "val": "right",
+                                    },
+                                    "rootKey": "_attr",
+                                    "xmlKeys": Object {
+                                      "val": "w:val",
+                                    },
+                                  },
+                                ],
+                                "rootKey": "w:jc",
+                              },
+                            ],
+                            "rootKey": "w:pPr",
+                          },
+                          TextRun {
+                            "deleted": false,
+                            "properties": RunProperties {
+                              "deleted": false,
+                              "root": Array [],
+                              "rootKey": "w:rPr",
+                            },
+                            "root": Array [
+                              RunProperties {
+                                "deleted": false,
+                                "root": Array [],
+                                "rootKey": "w:rPr",
+                              },
+                              Text {
+                                "deleted": false,
+                                "root": Array [
+                                  TextAttributes {
+                                    "deleted": false,
+                                    "root": Object {
+                                      "space": "preserve",
+                                    },
+                                    "rootKey": "_attr",
+                                    "xmlKeys": Object {
+                                      "space": "xml:space",
+                                    },
+                                  },
+                                  "Flora Chapman -- 01 Nov 2018 -- ",
+                                ],
+                                "rootKey": "w:t",
+                              },
+                              Begin {
+                                "deleted": false,
+                                "root": Array [
+                                  FidCharAttrs {
+                                    "deleted": false,
+                                    "root": Object {
+                                      "dirty": undefined,
+                                      "type": "begin",
+                                    },
+                                    "rootKey": "_attr",
+                                    "xmlKeys": Object {
+                                      "dirty": "w:dirty",
+                                      "type": "w:fldCharType",
+                                    },
+                                  },
+                                ],
+                                "rootKey": "w:fldChar",
+                              },
+                              Page {
+                                "deleted": false,
+                                "root": Array [
+                                  TextAttributes {
+                                    "deleted": false,
+                                    "root": Object {
+                                      "space": "preserve",
+                                    },
+                                    "rootKey": "_attr",
+                                    "xmlKeys": Object {
+                                      "space": "xml:space",
+                                    },
+                                  },
+                                  "PAGE",
+                                ],
+                                "rootKey": "w:instrText",
+                              },
+                              Separate {
+                                "deleted": false,
+                                "root": Array [
+                                  FidCharAttrs {
+                                    "deleted": false,
+                                    "root": Object {
+                                      "dirty": undefined,
+                                      "type": "separate",
+                                    },
+                                    "rootKey": "_attr",
+                                    "xmlKeys": Object {
+                                      "dirty": "w:dirty",
+                                      "type": "w:fldCharType",
+                                    },
+                                  },
+                                ],
+                                "rootKey": "w:fldChar",
+                              },
+                              End {
+                                "deleted": false,
+                                "root": Array [
+                                  FidCharAttrs {
+                                    "deleted": false,
+                                    "root": Object {
+                                      "dirty": undefined,
+                                      "type": "end",
+                                    },
+                                    "rootKey": "_attr",
+                                    "xmlKeys": Object {
+                                      "dirty": "w:dirty",
+                                      "type": "w:fldCharType",
+                                    },
+                                  },
+                                ],
+                                "rootKey": "w:fldChar",
+                              },
+                            ],
+                            "rootKey": "w:r",
+                          },
+                        ],
+                        "rootKey": "w:p",
+                      },
+                    ],
+                    "rootKey": "w:ftr",
+                  },
+                  "media": Media {
+                    "map": Map {},
+                  },
+                  "relationships": Relationships {
+                    "deleted": false,
+                    "root": Array [
+                      RelationshipsAttributes {
+                        "deleted": false,
+                        "root": Object {
+                          "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+                        },
+                        "rootKey": "_attr",
+                        "xmlKeys": Object {
+                          "xmlns": "xmlns",
+                        },
+                      },
+                    ],
+                    "rootKey": "Relationships",
+                  },
+                },
+              },
+              "headers": Object {
+                "default": HeaderWrapper {
+                  "header": Header {
+                    "deleted": false,
+                    "refId": 4,
+                    "root": Array [
+                      HeaderAttributes {
+                        "deleted": false,
+                        "root": Object {
+                          "cx": "http://schemas.microsoft.com/office/drawing/2014/chartex",
+                          "cx1": "http://schemas.microsoft.com/office/drawing/2015/9/8/chartex",
+                          "cx2": "http://schemas.microsoft.com/office/drawing/2015/10/21/chartex",
+                          "cx3": "http://schemas.microsoft.com/office/drawing/2016/5/9/chartex",
+                          "cx4": "http://schemas.microsoft.com/office/drawing/2016/5/10/chartex",
+                          "cx5": "http://schemas.microsoft.com/office/drawing/2016/5/11/chartex",
+                          "cx6": "http://schemas.microsoft.com/office/drawing/2016/5/12/chartex",
+                          "cx7": "http://schemas.microsoft.com/office/drawing/2016/5/13/chartex",
+                          "cx8": "http://schemas.microsoft.com/office/drawing/2016/5/14/chartex",
+                          "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                          "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                          "o": "urn:schemas-microsoft-com:office:office",
+                          "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                          "v": "urn:schemas-microsoft-com:vml",
+                          "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                          "w10": "urn:schemas-microsoft-com:office:word",
+                          "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                          "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                          "w16cid": "http://schemas.microsoft.com/office/word/2016/wordml/cid",
+                          "w16se": "http://schemas.microsoft.com/office/word/2015/wordml/symex",
+                          "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                          "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                          "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                          "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                          "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                          "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                          "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+                        },
+                        "rootKey": "_attr",
+                        "xmlKeys": Object {
+                          "cp": "xmlns:cp",
+                          "cx": "xmlns:cx",
+                          "cx1": "xmlns:cx1",
+                          "cx2": "xmlns:cx2",
+                          "cx3": "xmlns:cx3",
+                          "cx4": "xmlns:cx4",
+                          "cx5": "xmlns:cx5",
+                          "cx6": "xmlns:cx6",
+                          "cx7": "xmlns:cx7",
+                          "cx8": "xmlns:cx8",
+                          "dc": "xmlns:dc",
+                          "dcmitype": "xmlns:dcmitype",
+                          "dcterms": "xmlns:dcterms",
+                          "m": "xmlns:m",
+                          "mc": "xmlns:mc",
+                          "o": "xmlns:o",
+                          "r": "xmlns:r",
+                          "type": "xsi:type",
+                          "v": "xmlns:v",
+                          "w": "xmlns:w",
+                          "w10": "xmlns:w10",
+                          "w14": "xmlns:w14",
+                          "w15": "xmlns:w15",
+                          "w16cid": "xmlns:w16cid",
+                          "w16se": "xmlns:w16se",
+                          "wne": "xmlns:wne",
+                          "wp": "xmlns:wp",
+                          "wp14": "xmlns:wp14",
+                          "wpc": "xmlns:wpc",
+                          "wpg": "xmlns:wpg",
+                          "wpi": "xmlns:wpi",
+                          "wps": "xmlns:wps",
+                          "xsi": "xmlns:xsi",
+                        },
+                      },
+                    ],
+                    "rootKey": "w:hdr",
+                  },
+                  "media": Media {
+                    "map": Map {},
+                  },
+                  "relationships": Relationships {
+                    "deleted": false,
+                    "root": Array [
+                      RelationshipsAttributes {
+                        "deleted": false,
+                        "root": Object {
+                          "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+                        },
+                        "rootKey": "_attr",
+                        "xmlKeys": Object {
+                          "xmlns": "xmlns",
+                        },
+                      },
+                    ],
+                    "rootKey": "Relationships",
+                  },
+                },
+              },
               "right": 1200,
-              "space": 708,
               "top": 100,
-              "width": 11906,
             },
             "root": Array [
               PageSize {
@@ -12766,7 +14030,7 @@ File {
     "rootKey": "Relationships",
   },
   "footNotes": FootNotes {
-    "counter": 1,
+    "currentId": 1,
     "deleted": false,
     "root": Array [
       FootnotesAttributes {
@@ -13142,89 +14406,62 @@ File {
     ],
     "rootKey": "w:footnotes",
   },
-  "footerWrapper": Array [
-    FooterWrapper {
-      "footer": Footer {
-        "deleted": false,
-        "refId": 5,
-        "root": Array [
-          FooterAttributes {
-            "deleted": false,
-            "root": Object {
-              "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
-              "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
-              "o": "urn:schemas-microsoft-com:office:office",
-              "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
-              "v": "urn:schemas-microsoft-com:vml",
-              "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
-              "w10": "urn:schemas-microsoft-com:office:word",
-              "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
-              "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
-              "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
-              "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
-              "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
-              "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
-              "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
-              "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
-              "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
-            },
-            "rootKey": "_attr",
-            "xmlKeys": Object {
-              "cp": "xmlns:cp",
-              "dc": "xmlns:dc",
-              "dcmitype": "xmlns:dcmitype",
-              "dcterms": "xmlns:dcterms",
-              "m": "xmlns:m",
-              "mc": "xmlns:mc",
-              "o": "xmlns:o",
-              "r": "xmlns:r",
-              "type": "xsi:type",
-              "v": "xmlns:v",
-              "w": "xmlns:w",
-              "w10": "xmlns:w10",
-              "w14": "xmlns:w14",
-              "w15": "xmlns:w15",
-              "wne": "xmlns:wne",
-              "wp": "xmlns:wp",
-              "wp14": "xmlns:wp14",
-              "wpc": "xmlns:wpc",
-              "wpg": "xmlns:wpg",
-              "wpi": "xmlns:wpi",
-              "wps": "xmlns:wps",
-              "xsi": "xmlns:xsi",
-            },
-          },
-          Paragraph {
-            "deleted": false,
-            "properties": ParagraphProperties {
+  "footers": Array [
+    Object {
+      "footer": FooterWrapper {
+        "footer": Footer {
+          "deleted": false,
+          "refId": 5,
+          "root": Array [
+            FooterAttributes {
               "deleted": false,
-              "paragraphBorder": Border {
-                "deleted": false,
-                "root": Array [],
-                "rootKey": "w:pBdr",
+              "root": Object {
+                "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                "o": "urn:schemas-microsoft-com:office:office",
+                "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                "v": "urn:schemas-microsoft-com:vml",
+                "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                "w10": "urn:schemas-microsoft-com:office:word",
+                "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
               },
-              "root": Array [
-                Alignment {
-                  "deleted": false,
-                  "root": Array [
-                    AlignmentAttributes {
-                      "deleted": false,
-                      "root": Object {
-                        "val": "right",
-                      },
-                      "rootKey": "_attr",
-                      "xmlKeys": Object {
-                        "val": "w:val",
-                      },
-                    },
-                  ],
-                  "rootKey": "w:jc",
-                },
-              ],
-              "rootKey": "w:pPr",
+              "rootKey": "_attr",
+              "xmlKeys": Object {
+                "cp": "xmlns:cp",
+                "dc": "xmlns:dc",
+                "dcmitype": "xmlns:dcmitype",
+                "dcterms": "xmlns:dcterms",
+                "m": "xmlns:m",
+                "mc": "xmlns:mc",
+                "o": "xmlns:o",
+                "r": "xmlns:r",
+                "type": "xsi:type",
+                "v": "xmlns:v",
+                "w": "xmlns:w",
+                "w10": "xmlns:w10",
+                "w14": "xmlns:w14",
+                "w15": "xmlns:w15",
+                "wne": "xmlns:wne",
+                "wp": "xmlns:wp",
+                "wp14": "xmlns:wp14",
+                "wpc": "xmlns:wpc",
+                "wpg": "xmlns:wpg",
+                "wpi": "xmlns:wpi",
+                "wps": "xmlns:wps",
+                "xsi": "xmlns:xsi",
+              },
             },
-            "root": Array [
-              ParagraphProperties {
+            Paragraph {
+              "deleted": false,
+              "properties": ParagraphProperties {
                 "deleted": false,
                 "paragraphBorder": Border {
                   "deleted": false,
@@ -13251,211 +14488,266 @@ File {
                 ],
                 "rootKey": "w:pPr",
               },
-              TextRun {
-                "deleted": false,
-                "properties": RunProperties {
+              "root": Array [
+                ParagraphProperties {
                   "deleted": false,
-                  "root": Array [],
-                  "rootKey": "w:rPr",
+                  "paragraphBorder": Border {
+                    "deleted": false,
+                    "root": Array [],
+                    "rootKey": "w:pBdr",
+                  },
+                  "root": Array [
+                    Alignment {
+                      "deleted": false,
+                      "root": Array [
+                        AlignmentAttributes {
+                          "deleted": false,
+                          "root": Object {
+                            "val": "right",
+                          },
+                          "rootKey": "_attr",
+                          "xmlKeys": Object {
+                            "val": "w:val",
+                          },
+                        },
+                      ],
+                      "rootKey": "w:jc",
+                    },
+                  ],
+                  "rootKey": "w:pPr",
                 },
-                "root": Array [
-                  RunProperties {
+                TextRun {
+                  "deleted": false,
+                  "properties": RunProperties {
                     "deleted": false,
                     "root": Array [],
                     "rootKey": "w:rPr",
                   },
-                  Text {
-                    "deleted": false,
-                    "root": Array [
-                      TextAttributes {
-                        "deleted": false,
-                        "root": Object {
-                          "space": "preserve",
+                  "root": Array [
+                    RunProperties {
+                      "deleted": false,
+                      "root": Array [],
+                      "rootKey": "w:rPr",
+                    },
+                    Text {
+                      "deleted": false,
+                      "root": Array [
+                        TextAttributes {
+                          "deleted": false,
+                          "root": Object {
+                            "space": "preserve",
+                          },
+                          "rootKey": "_attr",
+                          "xmlKeys": Object {
+                            "space": "xml:space",
+                          },
                         },
-                        "rootKey": "_attr",
-                        "xmlKeys": Object {
-                          "space": "xml:space",
+                        "Flora Chapman -- 01 Nov 2018 -- ",
+                      ],
+                      "rootKey": "w:t",
+                    },
+                    Begin {
+                      "deleted": false,
+                      "root": Array [
+                        FidCharAttrs {
+                          "deleted": false,
+                          "root": Object {
+                            "dirty": undefined,
+                            "type": "begin",
+                          },
+                          "rootKey": "_attr",
+                          "xmlKeys": Object {
+                            "dirty": "w:dirty",
+                            "type": "w:fldCharType",
+                          },
                         },
-                      },
-                      "Flora Chapman -- 01 Nov 2018 -- ",
-                    ],
-                    "rootKey": "w:t",
-                  },
-                  Begin {
-                    "deleted": false,
-                    "root": Array [
-                      FidCharAttrs {
-                        "deleted": false,
-                        "root": Object {
-                          "dirty": undefined,
-                          "type": "begin",
+                      ],
+                      "rootKey": "w:fldChar",
+                    },
+                    Page {
+                      "deleted": false,
+                      "root": Array [
+                        TextAttributes {
+                          "deleted": false,
+                          "root": Object {
+                            "space": "preserve",
+                          },
+                          "rootKey": "_attr",
+                          "xmlKeys": Object {
+                            "space": "xml:space",
+                          },
                         },
-                        "rootKey": "_attr",
-                        "xmlKeys": Object {
-                          "dirty": "w:dirty",
-                          "type": "w:fldCharType",
+                        "PAGE",
+                      ],
+                      "rootKey": "w:instrText",
+                    },
+                    Separate {
+                      "deleted": false,
+                      "root": Array [
+                        FidCharAttrs {
+                          "deleted": false,
+                          "root": Object {
+                            "dirty": undefined,
+                            "type": "separate",
+                          },
+                          "rootKey": "_attr",
+                          "xmlKeys": Object {
+                            "dirty": "w:dirty",
+                            "type": "w:fldCharType",
+                          },
                         },
-                      },
-                    ],
-                    "rootKey": "w:fldChar",
-                  },
-                  Page {
-                    "deleted": false,
-                    "root": Array [
-                      TextAttributes {
-                        "deleted": false,
-                        "root": Object {
-                          "space": "preserve",
+                      ],
+                      "rootKey": "w:fldChar",
+                    },
+                    End {
+                      "deleted": false,
+                      "root": Array [
+                        FidCharAttrs {
+                          "deleted": false,
+                          "root": Object {
+                            "dirty": undefined,
+                            "type": "end",
+                          },
+                          "rootKey": "_attr",
+                          "xmlKeys": Object {
+                            "dirty": "w:dirty",
+                            "type": "w:fldCharType",
+                          },
                         },
-                        "rootKey": "_attr",
-                        "xmlKeys": Object {
-                          "space": "xml:space",
-                        },
-                      },
-                      "PAGE",
-                    ],
-                    "rootKey": "w:instrText",
-                  },
-                  Separate {
-                    "deleted": false,
-                    "root": Array [
-                      FidCharAttrs {
-                        "deleted": false,
-                        "root": Object {
-                          "dirty": undefined,
-                          "type": "separate",
-                        },
-                        "rootKey": "_attr",
-                        "xmlKeys": Object {
-                          "dirty": "w:dirty",
-                          "type": "w:fldCharType",
-                        },
-                      },
-                    ],
-                    "rootKey": "w:fldChar",
-                  },
-                  End {
-                    "deleted": false,
-                    "root": Array [
-                      FidCharAttrs {
-                        "deleted": false,
-                        "root": Object {
-                          "dirty": undefined,
-                          "type": "end",
-                        },
-                        "rootKey": "_attr",
-                        "xmlKeys": Object {
-                          "dirty": "w:dirty",
-                          "type": "w:fldCharType",
-                        },
-                      },
-                    ],
-                    "rootKey": "w:fldChar",
-                  },
-                ],
-                "rootKey": "w:r",
+                      ],
+                      "rootKey": "w:fldChar",
+                    },
+                  ],
+                  "rootKey": "w:r",
+                },
+              ],
+              "rootKey": "w:p",
+            },
+          ],
+          "rootKey": "w:ftr",
+        },
+        "media": Media {
+          "map": Map {},
+        },
+        "relationships": Relationships {
+          "deleted": false,
+          "root": Array [
+            RelationshipsAttributes {
+              "deleted": false,
+              "root": Object {
+                "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
               },
-            ],
-            "rootKey": "w:p",
-          },
-        ],
-        "rootKey": "w:ftr",
-      },
-      "media": Media {
-        "map": Map {},
-      },
-      "relationships": Relationships {
-        "deleted": false,
-        "root": Array [
-          RelationshipsAttributes {
-            "deleted": false,
-            "root": Object {
-              "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+              "rootKey": "_attr",
+              "xmlKeys": Object {
+                "xmlns": "xmlns",
+              },
             },
-            "rootKey": "_attr",
-            "xmlKeys": Object {
-              "xmlns": "xmlns",
-            },
-          },
-        ],
-        "rootKey": "Relationships",
+          ],
+          "rootKey": "Relationships",
+        },
       },
+      "type": "default",
     },
   ],
-  "headerWrapper": Array [
-    HeaderWrapper {
-      "header": Header {
-        "deleted": false,
-        "refId": 4,
-        "root": Array [
-          HeaderAttributes {
-            "deleted": false,
-            "root": Object {
-              "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
-              "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
-              "o": "urn:schemas-microsoft-com:office:office",
-              "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
-              "v": "urn:schemas-microsoft-com:vml",
-              "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
-              "w10": "urn:schemas-microsoft-com:office:word",
-              "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
-              "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
-              "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
-              "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
-              "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
-              "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
-              "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
-              "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
-              "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+  "headers": Array [
+    Object {
+      "header": HeaderWrapper {
+        "header": Header {
+          "deleted": false,
+          "refId": 4,
+          "root": Array [
+            HeaderAttributes {
+              "deleted": false,
+              "root": Object {
+                "cx": "http://schemas.microsoft.com/office/drawing/2014/chartex",
+                "cx1": "http://schemas.microsoft.com/office/drawing/2015/9/8/chartex",
+                "cx2": "http://schemas.microsoft.com/office/drawing/2015/10/21/chartex",
+                "cx3": "http://schemas.microsoft.com/office/drawing/2016/5/9/chartex",
+                "cx4": "http://schemas.microsoft.com/office/drawing/2016/5/10/chartex",
+                "cx5": "http://schemas.microsoft.com/office/drawing/2016/5/11/chartex",
+                "cx6": "http://schemas.microsoft.com/office/drawing/2016/5/12/chartex",
+                "cx7": "http://schemas.microsoft.com/office/drawing/2016/5/13/chartex",
+                "cx8": "http://schemas.microsoft.com/office/drawing/2016/5/14/chartex",
+                "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+                "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+                "o": "urn:schemas-microsoft-com:office:office",
+                "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+                "v": "urn:schemas-microsoft-com:vml",
+                "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+                "w10": "urn:schemas-microsoft-com:office:word",
+                "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+                "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+                "w16cid": "http://schemas.microsoft.com/office/word/2016/wordml/cid",
+                "w16se": "http://schemas.microsoft.com/office/word/2015/wordml/symex",
+                "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+                "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+                "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+                "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+                "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+                "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+                "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+              },
+              "rootKey": "_attr",
+              "xmlKeys": Object {
+                "cp": "xmlns:cp",
+                "cx": "xmlns:cx",
+                "cx1": "xmlns:cx1",
+                "cx2": "xmlns:cx2",
+                "cx3": "xmlns:cx3",
+                "cx4": "xmlns:cx4",
+                "cx5": "xmlns:cx5",
+                "cx6": "xmlns:cx6",
+                "cx7": "xmlns:cx7",
+                "cx8": "xmlns:cx8",
+                "dc": "xmlns:dc",
+                "dcmitype": "xmlns:dcmitype",
+                "dcterms": "xmlns:dcterms",
+                "m": "xmlns:m",
+                "mc": "xmlns:mc",
+                "o": "xmlns:o",
+                "r": "xmlns:r",
+                "type": "xsi:type",
+                "v": "xmlns:v",
+                "w": "xmlns:w",
+                "w10": "xmlns:w10",
+                "w14": "xmlns:w14",
+                "w15": "xmlns:w15",
+                "w16cid": "xmlns:w16cid",
+                "w16se": "xmlns:w16se",
+                "wne": "xmlns:wne",
+                "wp": "xmlns:wp",
+                "wp14": "xmlns:wp14",
+                "wpc": "xmlns:wpc",
+                "wpg": "xmlns:wpg",
+                "wpi": "xmlns:wpi",
+                "wps": "xmlns:wps",
+                "xsi": "xmlns:xsi",
+              },
             },
-            "rootKey": "_attr",
-            "xmlKeys": Object {
-              "cp": "xmlns:cp",
-              "dc": "xmlns:dc",
-              "dcmitype": "xmlns:dcmitype",
-              "dcterms": "xmlns:dcterms",
-              "m": "xmlns:m",
-              "mc": "xmlns:mc",
-              "o": "xmlns:o",
-              "r": "xmlns:r",
-              "type": "xsi:type",
-              "v": "xmlns:v",
-              "w": "xmlns:w",
-              "w10": "xmlns:w10",
-              "w14": "xmlns:w14",
-              "w15": "xmlns:w15",
-              "wne": "xmlns:wne",
-              "wp": "xmlns:wp",
-              "wp14": "xmlns:wp14",
-              "wpc": "xmlns:wpc",
-              "wpg": "xmlns:wpg",
-              "wpi": "xmlns:wpi",
-              "wps": "xmlns:wps",
-              "xsi": "xmlns:xsi",
+          ],
+          "rootKey": "w:hdr",
+        },
+        "media": Media {
+          "map": Map {},
+        },
+        "relationships": Relationships {
+          "deleted": false,
+          "root": Array [
+            RelationshipsAttributes {
+              "deleted": false,
+              "root": Object {
+                "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
+              },
+              "rootKey": "_attr",
+              "xmlKeys": Object {
+                "xmlns": "xmlns",
+              },
             },
-          },
-        ],
-        "rootKey": "w:hdr",
+          ],
+          "rootKey": "Relationships",
+        },
       },
-      "media": Media {
-        "map": Map {},
-      },
-      "relationships": Relationships {
-        "deleted": false,
-        "root": Array [
-          RelationshipsAttributes {
-            "deleted": false,
-            "root": Object {
-              "xmlns": "http://schemas.openxmlformats.org/package/2006/relationships",
-            },
-            "rootKey": "_attr",
-            "xmlKeys": Object {
-              "xmlns": "xmlns",
-            },
-          },
-        ],
-        "rootKey": "Relationships",
-      },
+      "type": "default",
     },
   ],
   "media": Media {
