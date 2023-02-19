@@ -1,0 +1,22 @@
+{
+  "name": "word-resume-template",
+  "version": "1.0.0",
+  "description": "[npm package render-resume](https://www.npmjs.com/package/render-resume)",
+  "main": "render.js",
+  "scripts": {
+    "render": "render-resume resume.yml",
+    "render:watch": "nodemon -e yml --exec \"babel-node render.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennyhyun/word-resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennyhyun/word-resume/issues"
+  },
+  "homepage": "https://github.com/kennyhyun/word-resume#readme"
+}
