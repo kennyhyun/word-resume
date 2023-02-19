@@ -1,5 +1,5 @@
-const render = require('./render');
-const seeder = require('./seeder');
+import { generateDocument } from './render';
+import seeder from './seeder';
 
-module.exports = render;
-module.exports.seeder = seeder;
+export { generateDocument, seeder };
+export default generateDocument;
