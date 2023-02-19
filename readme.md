@@ -4,43 +4,27 @@
 
 Generate docx resume from yaml data using [docx](https://github.com/dolanmiu/docx)
 
+Benefits
+
 * Avoid hassles like updating dates and focus on the contents.
 * Generate Uptodate resume instantly
 * Pdf conversion is also handy when you use libre office cli
-* manage the source file with your everday editor
-* multiple revison (wip)
+* Manage the source file with your everday programming editor
+* Track your changes in the private git repo
+* Keep multiple revisons using `focusOn` field
 
-** pretty much experimental yet
+** yet experimental
 
 ## Usage
 
-### npm (recommended)
+### Creating your won repo (recommended)
 
-in a blank directory
-
-```
-$ git init
-$ npm init --yes
-$ npm install -S render-resume
-$ npx generate-resume-source resume.yml
-$ git add . && git commit -m "init"
-```
-
-edit the yaml file for your resume and render
-
-```
-$ npx render-resume resume.yml
-```
-
-repeat editing and render until you want and you can commit and keep your own yaml in the local repo
-
-### git clone
-
-After cloning this repo,
-```
-$ npm i
-$ npm run render sample.yml
-```
+1. Create a new repo using this as template (recommend private)
+1. Clone the repo in your env
+1. run `npm i`
+1. copy sample.yml into resume.yml in `resume` dir and update to yours
+1. run `npm render` to get docx in `output` dir
+1. You can commit and push your yml in `resume` dir if you want
 
 ### Programmatic
 
