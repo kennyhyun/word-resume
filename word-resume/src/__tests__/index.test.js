@@ -2,7 +2,7 @@ import { promises as fsp } from 'fs';
 import { Packer } from 'docx';
 import AdmZip from 'adm-zip';
 
-const generateDocument = require('../');
+const { generateDocument } = require('../');
 const generateSeed = require('../seeder');
 
 describe('generateDocument', () => {
@@ -20,9 +20,7 @@ describe('generateDocument', () => {
     const filename = './test.docx';
     await fsp.writeFile(filename, docBuffer);
     const zip = AdmZip(filename);
-    const docEntry = zip
-      .getEntries()
-      .find(({ entryName }) => entryName === 'word/document.xml');
+    const docEntry = zip.getEntries().find(({ entryName }) => entryName === 'word/document.xml');
     expect(zip.readFile(docEntry).toString()).toMatchSnapshot();
   });
 });

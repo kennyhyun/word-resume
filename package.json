@@ -1,24 +1,24 @@
 {
-  "name": "render-resume",
-  "version": "0.9.11",
-  "description": "",
-  "main": "lib/index.js",
+  "name": "word-resume-template",
+  "version": "1.0.0",
+  "description": "[npm package render-resume](https://www.npmjs.com/package/render-resume)",
+  "main": "render.js",
+  "scripts": {
+    "render": "render-resume resume.yml",
+    "render:watch": "nodemon -e yml,js --exec \"babel-node render.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kennyhyun/word-resume.git"
   },
-  "scripts": {
-    "build": "babel src --out-dir lib",
-    "prepublish": "npm test && npm run build",
-    "render": "node bin/render.js",
-    "test": "jest"
-  },
-  "bin": {
-    "render-resume": "bin/render.js",
-    "generate-resume-source": "bin/generateSeed.js"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennyhyun/word-resume/issues"
+  },
+  "homepage": "https://github.com/kennyhyun/word-resume#readme",
   "dependencies": {
     "chance": "^1.1.10",
     "docx": "^4.7.1",
@@ -28,17 +28,12 @@
     "underscore.string": "^3.3.6"
   },
   "devDependencies": {
-    "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "adm-zip": "^0.5.10",
     "babel-jest": "^29.4.3",
-    "jest": "^25.5.4"
-  },
-  "jest": {
-    "transform": {
-      "\\.[jt]sx?$": "babel-jest"
-    },
-    "verbose": true
+    "jest": "^25.5.4",
+    "nodemon": "^2.0.20"
   }
 }
